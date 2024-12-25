@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Image, Link, Button } from "@nextui-org/react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useTheme } from "next-themes";
 import { SunIcon } from "./icons/SunIcon";
@@ -24,7 +24,8 @@ export default function Header() {
     <Navbar>
       <NavbarBrand>
         <Link href="/" color="foreground">
-          <p className="font-bold text-inherit">OCI Auth</p>
+          <p className="font-bold text-inherit">OCI Auth &nbsp;</p>
+          <Image height={36} width={36}src="/logo-react2.png"/>
         </Link>
       </NavbarBrand>
 
